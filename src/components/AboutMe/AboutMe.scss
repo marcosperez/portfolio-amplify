@@ -1,0 +1,52 @@
+@import "../../theme/mixins";
+
+.aboutMe {
+  font-size: 20px;
+  text-align: left;
+  position: absolute;
+  top: 160px;
+  right: 20px;
+  opacity: 0;
+  @include theme-aware("color", "text-color");
+}
+
+.aboutMeDescription {
+  font-size: 15px;
+  width: 239px;
+  opacity: 0;
+}
+
+.aboutMeTitle {
+  //   color: #df2a2a;
+  // text-shadow: 4px 4px 2px rgb(202 12 202 / 60%);
+
+  @include theme-aware("text-shadow", "text-shadow-secondary");
+  width: 140px;
+  opacity: 0;
+}
+.divider {
+  border-bottom: 2px solid;
+  @include theme-aware("border-color", "primary-color");
+  opacity: 0;
+}
+
+.label {
+  font-weight: 600;
+  margin-top: 10px;
+  //   color: white;
+}
+
+.textData {
+  //   color: white;
+}
+
+.social-buttons {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.social-icon {
+  filter: brightness(0) invert(1);
+  height: 40px;
+  padding: 8px;
+}
